@@ -116,11 +116,3 @@ cd portfolio
 
 # Öppna i webbläsaren
 open index.html
-
-
-
-
-
-
-
-

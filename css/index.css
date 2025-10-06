@@ -280,6 +280,11 @@ body.dark-mode .btn {
   
 }
 
+body.dark-mode .text-secondary {
+  color: #f8f4f4;
+
+}
+
 body.dark-mode .navbar {
   background-color: #1a1a1a;
 }
