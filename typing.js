@@ -3,9 +3,9 @@ const typingEl = document.querySelector("#typing");
 // Array med fraser och färger
 const phrases = [
   { text: "Hej, jag heter Sofia!", color: "rgba(151, 101, 179, 1)" },
-  { text: "Jag bygger moderna webbplatser.", color: "rgba(223, 109, 214, 1)" },
-  { text: "HTML, CSS & JavaScript är mina verktyg.", color: "rgba(114, 235, 205, 1)" },
-  { text: "Välkommen till min portfolio!", color: "rgba(233, 85, 45, 1)" }
+  { text: "Jag bygger moderna webbplatser", color: "rgba(223, 109, 214, 1)" },
+  { text: "HTML, CSS & JavaScript är mina verktyg", color: "rgba(114, 235, 205, 1)" },
+  { text: "Välkommen till min portfolio!", color: "rgba(241, 102, 195, 1)" }
 ];
 
 // HOF: skapa array med bara texten (map)
