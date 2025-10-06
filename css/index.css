@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: hsla(272, 76%, 53%, 0.65);
+    --secondary-color: hsla(260, 100%, 44%, 0.65);
+    --dark-color: #4b00e0a6;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+  }
+
+/* Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+background-image: linear-gradient(rgba(215, 179, 245, 0.76),
+ rgba(118, 71, 194, 0.7)), url(../images/dator.jpg);
+background-size: cover;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+/* Text colors */
+.text-primary {
+    color: var(--primary-color);
+  }
+  
+  .text-secondary {
+    color: var(--secondary-color);
+  }
+  
+  .text-dark {
+    color: var(--dark-color);
+  }
+  
+  .text-light {
+    color: var(--light-color);
+  }
+
+/* Showcase */
+
+.showcase {
+  height: 400px;
+  color: #fff; 
+  background-image: linear-gradient(rgba(215, 179, 245, 0.623),
+  rgba(118, 71, 194, 0.7)), url(../images/dator.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.showcase-form {
+  position: relative;
+  height: 500px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+  
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'],
+.showcase-form textarea[type='text']{
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  font-family: serif;
+}
+
+.showcase-form input,textarea:focus {
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+
+/* Stats */
+
+.stats {
+  padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Kontakta mig */
+
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cloud .grid,
+  .experience-main .grid,
+  .contact-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  .experience-head,
+  .experience-sub-head,
+  .contact-head {
+    text-align: center;
+  }
+
+  .experience-head img,
+  .experience-sub-head img,
+  .contact-head img {
+    justify-self: center;
+  }
+
+  .experience-main .grid > *:first-child,
+  .experience-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .showcase-form {
+    width: 300px;
+  }
+
+}
+
+/* ======== DARK MODE ======== */
+
+body.dark-mode {
+  --primary-color: #8b5cf6;
+  --secondary-color: #6d28d9;
+  --dark-color: #1e1e1ee8;
+  --light-color: #e5e5e5;
+  --success-color: #4ade80;
+  --error-color: #ef4444;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+/* Justera specifika sektioner om det behövs */
+body.dark-mode .card {
+  background-color: #2c2c2c;
+  color: var(--light-color);
+}
+body.dark-mode .showcase { /* Mörk bakgrund för showcase-sektionen */
+  background-image: linear-gradient(rgb(59 50 67 / 62%), rgb(37 35 41 / 70%)), url(../images/dator.jpg);
+}
+
+body.dark-mode .bg-primary { /* Mörk bakgrund för primary sektionen */
+  background-image: linear-gradient(rgb(59 50 67 / 62%), rgb(37 35 41 / 70%)), url(../images/dator.jpg);
+}
+
+body.dark-mode .btn {
+  background-color: #1e1e1e;
+  
+}
+
+body.dark-mode .navbar {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode a {
+  color: var(--light-color);
+}
