@@ -47,9 +47,8 @@
         <div class="stats-heading text-center my-1">
 
             <div class="showcase-form card"> <!-- card bg-light p-3 -->
-            <h2>Skicka iväg ett mejl om du vill komma i kontakt</h2>
-            
-            <form>
+            <h2>Skicka iväg ett mejl om du vill komma i kontakt</h2> 
+            <form id="contact-form">
             <div class="form-control">
                 <input type="text" name="name" placeholder="Namn" required>
             </div>
@@ -63,13 +62,13 @@
             </div>
 
             <div class="form-control">
-                <textarea type="text" name="textarea" placeholder="Ditt meddelande" required></textarea>
+                <textarea name="message" placeholder="Ditt meddelande" required></textarea>
             </div>
 
                 <input type="submit" value="Skicka" class="btn btn-outline">
             </div>
             </form>
-
+            <div id="form-message"></div>
         </div>
     </section>
     
@@ -95,5 +94,6 @@
             </div>
         </div>
     </footer>
+   <!-- <script src="contact.js"></script> -->
 </body>
 </html>

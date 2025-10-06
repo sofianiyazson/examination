@@ -108,7 +108,8 @@ background-size: cover;
 
 .showcase-form input[type='text'],
 .showcase-form input[type='email'],
-.showcase-form textarea[type='text']{
+.showcase-form textarea[type='text'],
+.showcase-form textarea[name='message'] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
@@ -291,4 +292,11 @@ body.dark-mode .navbar {
 
 body.dark-mode a {
   color: var(--light-color);
+}
+
+input.error, textarea.error {
+  border: 2px solid red;
+}
+#form-message p {
+  margin: 5px 0;
 }
