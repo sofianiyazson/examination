@@ -38,10 +38,10 @@ Jag lärde mig att:
 
 ## 📸 Skärmbilder
 ### Startsida
-![Startsida](./images/webb1.png)
+<img src="./images/webb1.png" alt="Startsida" width="400"/>
 
 ### Mobile-first
-![Projekt](./images/webb3.png)
+<img src="./images/webb3.png" alt="Projekt" width="400"/>
 
 ---
 
@@ -109,7 +109,7 @@ Om du vill köra projektet lokalt:
 
 ```bash
 # Klona repot
-git clone https://github.com/ditt-användarnamn/portfolio.git
+git clone https://github.com/sofianiyazson/examination
 
 # Öppna mappen
 cd portfolio
