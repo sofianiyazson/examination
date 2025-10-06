@@ -38,10 +38,10 @@ Jag lärde mig att:
 
 ## 📸 Skärmbilder
 ### Startsida
-![Startsida](images/webb1)
+![Startsida](./images/webb1.png)
 
-### Projektsektion
-![Projekt](images/webb3)
+### Mobile-first
+![Projekt](./images/webb3.png)
 
 ---
 
