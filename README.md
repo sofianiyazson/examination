@@ -35,6 +35,7 @@ Jag lärde mig att:
 - Strukturera CSS med variabler och moduler  
 - Arbeta med media queries  
 - Använda GitHub Pages för att publicera projektet
+- Använde https://html-css-js.com/css/generator/text-shadow/ för hitta fina styling
 
 ## 📸 Skärmbilder
 ### Startsida
@@ -55,6 +56,7 @@ Jag lärde mig att:
 - Ansvarar för **layout, färg och typografi**.
 - Använder **Flexbox** och **CSS Grid** för att bygga en responsiv design som fungerar på både mobil, surfplatta och desktop.
 - Inkluderar **animationer** och **hovereffekter** för att ge en mer dynamisk upplevelse.
+
 
 ### ⚡ JavaScript
 - Använt för **interaktivitet och dynamiska funktioner**.
