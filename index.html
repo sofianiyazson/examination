@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/essentials.css">
-    <link rel="stylesheet" href="css/forms.css">
 
     <title>My portfolio</title>
 </head>
@@ -98,14 +97,6 @@
                 <img src="images/logos/csharp.png" alt="">
               </div>
               <div class="card">
-                <h4>Ruby</h4>
-                <img src="images/logos/ruby.png" alt="">
-              </div>
-              <div class="card">
-                <h4>PHP</h4>
-                <img src="images/logos/php.png" alt="">
-              </div>
-              <div class="card">
                 <h4>Node.js</h4>
                 <img src="images/logos/node.png" alt="">
               </div>
@@ -123,7 +114,25 @@
     <button id="theme-toggle" class="btn btn-secondary">Byt till Dark Mode</button>
   </div>
 
+  <!-- Rock Paper Scissors -->
+   <section class="container game">
 
+    <h2 class="text-center my-2 lg">Sten Sax Påse</h2>
+
+    <div class="choices text-center">
+
+    <button onclick="playGame('sten')">🪨</button>
+    <button onclick="playGame('sax')">✂️</button>
+    <button onclick="playGame('papper')">📄</button>
+    
+
+    </div>  
+
+    <div id="playerDisplay" class="text-center">Spelare: </div>
+    <div id="computerDisplay" class="text-center">Dator: </div>
+    <div id="resultDisplay" class="text-center"></div>
+
+   </section>
 
     <!-- Footer -->
     <footer class="footer bg-dark py-5">
