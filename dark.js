@@ -5,7 +5,7 @@ const body = document.querySelector("body");
 // Kolla om användaren har redan valt ett tema i localStorage
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark-mode");
-  toggleButton.textContent = "Byt till Light Mode";
+  toggleButton.textContent = "☀️";
 }
 
 // ES6 Arrow function för att växla tema
@@ -14,10 +14,10 @@ const toggleTheme = () => {
 
   // Villkorssats: ändra knappens text beroende på läget
   if (body.classList.contains("dark-mode")) {
-    toggleButton.textContent = "Byt till Light Mode";
+    toggleButton.textContent = "☀️";
     localStorage.setItem("theme", "dark"); // spara valet i localStorage
   } else {
-    toggleButton.textContent = "Byt till Dark Mode";
+    toggleButton.textContent = "🌘";
     localStorage.setItem("theme", "light"); // spara valet i localStorage
   }
 };

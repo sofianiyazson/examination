@@ -11,7 +11,7 @@ function playGame(playerChoice) {
     let result = "";
 
     if (playerChoice === computerChoice) {
-        result = "Oavgjort!";
+        result = "Oavgjort 😭";
     } else {
         switch (playerChoice) {
             case "🪨":

@@ -44,6 +44,8 @@ background-size: cover;
   color: #fff;
 }
 
+
+
 /* Text colors */
 .text-primary {
     color: var(--primary-color);
@@ -258,7 +260,8 @@ text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1);
 }
 /* Sten sax påse */
 .game {
-  background-color: #9c9c9c;
+ background: #3d3232;
+background: radial-gradient(circle, rgba(61, 50, 50, 1) 0%, rgba(99, 99, 112, 1) 100%);
 }
 
 .choices {
@@ -335,12 +338,9 @@ body.dark-mode .navbar {
 body.dark-mode a {
   color: var(--light-color);
 }
-/* Form validation styles */
 
-input.error, textarea.error {
-  border: 2px solid red;
+.darkmode {
+  margin-bottom: 0px;
+  padding: 0px;
+  background: none;
 }
-#form-message p {
-  margin: 5px 0;
-}
-
