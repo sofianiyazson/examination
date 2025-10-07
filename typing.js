@@ -2,10 +2,10 @@ const typingEl = document.querySelector("#typing");
 
 // Array med fraser och färger
 const phrases = [
-  { text: "Hej, jag heter Sofia!", color: "rgba(151, 101, 179, 1)" },
-  { text: "Jag bygger moderna webbplatser", color: "rgba(223, 109, 214, 1)" },
-  { text: "HTML, CSS & JavaScript är mina verktyg", color: "rgba(114, 235, 205, 1)" },
-  { text: "Välkommen till min portfolio!", color: "rgba(241, 102, 195, 1)" }
+  { text: "Välkommen till min portfolio!", color: "rgba(255, 255, 255, 1)" },
+  { text: "Jag heter Sofia!", color: "rgba(109, 200, 223, 1)" },
+  { text: "Min specialitet är webbsidor", color: "rgba(114, 235, 205, 1)" },
+  { text: "HTML, CSS & JavaScript är mina verktyg", color: "rgba(246, 163, 218, 1)" }
 ];
 
 // HOF: skapa array med bara texten (map)
