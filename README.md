@@ -2,7 +2,7 @@
 
 > En modern och responsiv portfolio byggd med HTML, CSS och JavaScript.
 
-🔗 **Live Demo:** [https://mittportfolio.netlify.app](https://mittportfolio.netlify.app)
+🔗 **Live Demo:** [https://sofiassportfolio.netlify.app/](https://sofiassportfolio.netlify.app/)
 
 ---
 
@@ -34,7 +34,7 @@ Jag lärde mig att:
 
 - Strukturera CSS med variabler och moduler  
 - Arbeta med media queries  
-- Använda GitHub Pages för att publicera projektet
+- Använda Javascript funktioner som jag kommer lista nedan
 - Använde https://html-css-js.com/css/generator/text-shadow/ för hitta fina styling
 
 ## 📸 Skärmbilder
