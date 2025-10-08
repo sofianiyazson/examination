@@ -30,16 +30,14 @@ Portfolion är helt responsiv och anpassad för:
 ---
 
 ## 🧠 Källor och verktyg 
-
-
--  
 - https://youtu.be/3uKdQx-SZ5A?si=yQKn7Segt9cfiF_m - Sten Sax Påse spelet som är med i index.html
 - https://cssgradient.io/ - styling av olika element
 - https://html-css-js.com/css/generator/text-shadow/ - styla texter snyggt
+- och mååånga fler
 
 ---
 
-## 🧰 Tekniker som använts
+## 🧰 Tekniker
 
 ### 🧱 HTML
 - Använt för att skapa en tydlig **semantisk struktur** med element som `<header>`, `<main>`, `<nav>`, `<section>` och `<footer>`.
@@ -52,7 +50,7 @@ Portfolion är helt responsiv och anpassad för:
 - Använder **Flexbox** och **CSS Grid** för att bygga en responsiv design som fungerar på både mobil, surfplatta och desktop.
 - Inkluderar **hovereffekter** för att ge en mer dynamisk upplevelse.
 
-## 🧭 Flexbox och gridspecifikationer
+## 🧭 Flexbox och grid-specifikationer
 
 ### 📄 index.html
 
@@ -76,6 +74,8 @@ Portfolion är helt responsiv och anpassad för:
 
 
 # ⚡ JavaScript
+I webbsidan kan man hitta 3 olika Javascript interaktioner med filer: **darkmode.js**, **game.js** och **typing.js**. Nedan kan ni läsa om hur de har implementerats i webbsidan. 
+
 
 ## 🎮 game.js – Sten, Sax, Påse-spelet
 Ett interaktivt minispel där användaren kan välja mellan 🪨 sten, 📄 papper eller ✂️ sax.
