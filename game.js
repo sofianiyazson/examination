@@ -1,5 +1,3 @@
-
-
 const choices = ["🪨", "📄", "✂️"]; // Array med valmöjligheter
 
 // Hämta element från DOM

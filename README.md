@@ -50,55 +50,95 @@ Portfolion är helt responsiv och anpassad för:
 ### 🎨 CSS
 - Ansvarar för **layout, färg och typografi**.
 - Använder **Flexbox** och **CSS Grid** för att bygga en responsiv design som fungerar på både mobil, surfplatta och desktop.
-- Inkluderar **animationer** och **hovereffekter** för att ge en mer dynamisk upplevelse.
+- Inkluderar **hovereffekter** för att ge en mer dynamisk upplevelse.
 
+## 🧭 Flexbox och gridspecifikationer
 
-### ⚡ JavaScript
-- Använt för **interaktivitet och dynamiska funktioner**.
-- Skrivet med **moderna ES6-funktioner** (arrow functions, let/const, template literals).
-- Hanterar användarhändelser som klick på knappar, formulär eller navigation.
+### 📄 index.html
+
+| Typ | Antal | Var | Kolumner | Layout-beskrivning |
+|------|--------|------|-----------|--------------------|
+| **Flex** | 2 | Navbar + Languages | – | Horisontell justering och centrering |
+| **Grid** | 4 | Showcase, Stats, Cloud, Footer | 2–3 | Delar upp sidan i sektioner med kolumner |
+| **Totalt grid** | 4 | – | – | Grid används för huvudlayouten |
 
 ---
 
-## 🖱️ Interaktiva funktioner
+### 📘 experience.html
 
-I min portfolio finns flera funktioner som förbättrar användarupplevelsen:
+| Typ | Antal | Var | Kolumner | Layout-beskrivning |
+|------|--------|------|-----------|--------------------|
+| **Flex** | 1 | Navbar | – | Radlayout mellan logga & navigation |
+| **Grid** | 3 | Head, Main, Footer | 2–3 | Delar sidan i sektioner med kolumner |
+| **Totalt grid** | 3 | – | – | Enkel 2–3-kolumnslayout |
 
-- 🔄 **Responsiv navigationsmeny** som öppnas/stängs med JavaScript på mobila enheter.  
-- 💬 **Kontaktformulär** med enkel validering för att säkerställa att användaren fyller i rätt uppgifter.  
-- 🎞️ **Små animationer och övergångar** för att göra sidan mer levande.  
-- 🌗 (Eventuellt) **Dark mode/light mode-växling** för bättre tillgänglighet.
 
-När man använder dessa funktioner uppdateras innehållet dynamiskt, utan att sidan behöver laddas om.
+
+
+# ⚡ JavaScript
+
+## 🎮 game.js – Sten, Sax, Påse-spelet
+Ett interaktivt minispel där användaren kan välja mellan 🪨 sten, 📄 papper eller ✂️ sax.
+
+När användaren klickar på ett val:  
+- En JavaScript-funktion (`playGame`) körs.  
+- Datorn väljer slumpmässigt ett alternativ med hjälp av `Math.random()`.  
+- Resultatet (vinst, förlust eller oavgjort) visas direkt i webbläsaren genom att uppdatera DOM-element via `textContent`.  
+- En HOF-funktion (`forEach`) används för att logga valen i konsolen.  
+
+💡 **Syfte:** Träna användarinteraktion, villkorssatser (`if`, `switch`) och DOM-manipulation.
+
+---
+| **Kategori**       | **Krav**                       | **Hur det uppfylls i `game.js`**                       |
+| ----------------- | ------------------------------ | ------------------------------------------------------ |
+| Interaktivitet    | Funktion som körs vid klick     | `playGame(playerChoice)` kör spelet och uppdaterar DOM |
+| ES6-syntax        | `const` / `let`                | `choices`, `playerDisplay`, `computerDisplay` → `const`; `result` → `let` |
+|                   | Arrow function                 | `choices.forEach(choice => console.log(choice))`       |
+| DOM-manipulation  | Hämta & uppdatera element      | `getElementById()` + `textContent`                    |
+| Villkor & logik   | `if/else` och `switch`         | Kontrollerar oavgjort och vem som vinner              |
+|                   | Operatorer                     | `===` för jämförelse, ternary `? :` för vinnare       |
+| Loopar            | Loop genom array               | `forEach` går igenom alla val i `choices`            |
+
+
+## 🌗 dark.js – Mörkt och ljust läge (Dark Mode)
+- Hanterar växling mellan mörkt och ljust tema för hela sidan.  
+- En knapp (`toggle`) med `addEventListener("click", ...)` lyssnar efter klick.  
+- När man klickar, växlas en CSS-klass (`dark-mode`) på `<body>` för att ändra färger.  
+- Användarens val sparas i `localStorage`, så att temat kommer ihåg vilket läge man valt även efter att man stängt webbläsaren.  
+
+💡 **Syfte:** Skapa personlig och modern användarupplevelse med `classList.toggle()` och `localStorage`.
+
+---
+
+## ✍️ typing.js – Skrivmaskinseffekt i headern
+- Skapar en typing-animation i rubriken där olika fraser skrivs ut bokstav för bokstav.  
+- En array med fraser används.  
+- En loop och `setTimeout()` gör att varje bokstav skrivs ut i sekvens, vilket ger illusionen av att texten “skrivs ut”.  
+- En HOF-funktion (`map`) används för att bearbeta fraserna innan de visas (t.ex. för att slumpa ordning eller formatera text).  
+
+💡 **Syfte:** Göra startsidan mer levande och visa upp JavaScript-kunskap med loopar, tidsstyrning och DOM-uppdatering.
+
+
 
 ---
 
 ## 🚧 Utmaningar & lösningar
 
 ### 🧩 Utmaning:
-Att få **layouten att fungera på alla skärmstorlekar** (mobil, surfplatta, desktop) och samtidigt behålla en snygg design.
+- Att få **layouten att fungera på alla skärmstorlekar** (mobil, surfplatta, desktop) och samtidigt behålla en snygg design.
+- Att implementera **interaktiva funktioner Javscript** utan att CSS kraschade.
+- Implementerade **darkmode.js** men hela CSS passade inte alls in 
 
 **💡 Lösning:**
-Jag använde **media queries** tillsammans med **flex och grid** för att justera elementens storlek och position beroende på skärmens bredd.
+
+- Jag använde **media queries** tillsammans med **flex och grid** för att justera elementens storlek och position beroende på skärmens bredd.
+- Försökte lägga in darkmode i navbaren men sidan bröts. Löste det genom att lägga in den som `<li>` och som `<button>`. Trodde man inte kunde göra det. Sedan fick jag lägga in class=**darkmode** och anpassa ta bort margin och padding så att navbaren inte kraschade. 
+
+- Vissa av JS funktionerna "Kontaktformulär med validering" spenderade jag flera dagar på, även om det inte funkade som jag ville. Skrotade det och började om från början med en annan interaktivitet. 
+
+- Löste **darkmode** problemet med att **.body.darkmode** classen fick hoppa in och rädda all CSS. 
 
 ---
-
-### 🧩 Utmaning:
-Att implementera **interaktiva funktioner** utan att koden blev för rörig.
-
-**💡 Lösning:**
-Jag organiserade JavaScript i tydliga block, använde **ES6-funktioner** och kommenterade koden för bättre läsbarhet.
-
----
-
-### 🧩 Utmaning:
-Att publicera projektet och få allt att fungera på nätet.
-
-**💡 Lösning:**
-Jag använde **GitHub Pages** för att hosta portfolion, och kontrollerade att alla relativa sökvägar (CSS, JS, bilder) fungerade korrekt online.
-
----
-
 
 
 ## 🚀 Installation

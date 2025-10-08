@@ -268,7 +268,7 @@ pre {
     color: #1C9CEA;
   }
   
-/* Animations */
+/* Animations 
 @keyframes slideInFromLeft {
     0% {
       transform: translateX(-100%);
@@ -307,7 +307,7 @@ pre {
     100% {
       transform: translateX(0);
     }
-  }
+  } */
 
 /* Tablets and under */
 @media (max-width: 768px) {
