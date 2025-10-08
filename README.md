@@ -29,28 +29,23 @@ Portfolion är helt responsiv och anpassad för:
 
 ---
 
-## 🧠 Lärdomar
-Jag lärde mig att:
+## 🧠 Källor och verktyg 
 
-- Strukturera CSS med variabler och moduler  
-- Arbeta med media queries  
-- Använda Javascript funktioner som jag kommer lista nedan
-- Använde https://html-css-js.com/css/generator/text-shadow/ för hitta fina styling
 
-## 📸 Skärmbilder
-### Startsida
-<img src="./images/webb1.png" alt="Startsida" width="400"/>
-
-### Mobile-first
-<img src="./images/webb3.png" alt="Projekt" width="400"/>
+-  
+- https://youtu.be/3uKdQx-SZ5A?si=yQKn7Segt9cfiF_m - Sten Sax Påse spelet som är med i index.html
+- https://cssgradient.io/ - styling av olika element
+- https://html-css-js.com/css/generator/text-shadow/ - styla texter snyggt
 
 ---
 
 ## 🧰 Tekniker som använts
 
 ### 🧱 HTML
-- Använt för att skapa en tydlig **semantisk struktur** med element som `<header>`, `<main>` och `<footer>`.
+- Använt för att skapa en tydlig **semantisk struktur** med element som `<header>`, `<main>`, `<nav>`, `<section>` och `<footer>`.
 - Fokus på **tillgänglighet** och korrekt hierarki för rubriker.
+- Speficierat **alt-texter**.
+
 
 ### 🎨 CSS
 - Ansvarar för **layout, färg och typografi**.
