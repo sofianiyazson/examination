@@ -14,20 +14,20 @@ const texts = phrases.map(phrase => phrase.text);
 // HOF: skapa array med bara färger (map)
 const phraseColors = phrases.map(phrase => phrase.color);
 
-let phraseIndex = 0;
-let charIndex = 0;
+let phraseIndex = 0; // Index för aktuell fras
+let charIndex = 0; // Index för aktuell karaktär
 
 // Funktion för att skriva text
-const type = () => {
-  const currentText = texts[phraseIndex];
+const type = () => { // Arrow function
+  const currentText = texts[phraseIndex]; // Hämta aktuell fras
   typingEl.textContent = currentText.slice(0, charIndex + 1);
   typingEl.style.color = phraseColors[phraseIndex]; // sätt färg från HOF-array
-  charIndex++;
+  charIndex++; // Gå till nästa karaktär
 
-  if(charIndex === currentText.length){
-    setTimeout(() => erase(), 1500);
+  if(charIndex === currentText.length){ // Om hela frasen är skriven
+    setTimeout(() => erase(), 1500); // Vänta 1.5 sekunder innan radering
   } else {
-    setTimeout(type, 150);
+    setTimeout(type, 150); // Fortsätt skriva nästa karaktär efter 150ms
   }
 };
 
@@ -37,7 +37,7 @@ const erase = () => {
   typingEl.textContent = currentText.slice(0, charIndex - 1);
   charIndex--;
 
-  if(charIndex === 0){
+  if(charIndex === 0){ // Om hela frasen är raderad
     phraseIndex = (phraseIndex + 1) % texts.length; // loopar fraser
     setTimeout(type, 500);
   } else {
@@ -47,6 +47,3 @@ const erase = () => {
 
 // Starta effekten
 type();
-
-// HOF: logga alla fraser + färger
-phrases.forEach((p, i) => console.log(`Fras ${i+1}: ${p.text}, färg: ${p.color}`));
