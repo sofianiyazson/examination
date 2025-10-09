@@ -25,7 +25,7 @@ function playGame(playerChoice) { // Funktion som körs när spelaren gör ett v
         }
     }
 
-    // Uppdatera visningen
+    // Uppdatera visningen = visar resultatet på webbsidan.
     playerDisplay.textContent = `Du valde: ${playerChoice}`; // Använd backticks för template literals
     computerDisplay.textContent = `Datorn valde: ${computerChoice}`;
     resultDisplay.textContent = result;

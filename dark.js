@@ -17,14 +17,10 @@ const toggleTheme = () => {
     toggleButton.textContent = "☀️";
     localStorage.setItem("theme", "dark"); // spara valet i localStorage
   } else {
-    toggleButton.textContent = "🌘";
+    toggleButton.textContent = "🌘"; // Ändra till måne-ikon
     localStorage.setItem("theme", "light"); // spara valet i localStorage
   }
 };
 
 // Lägg till eventlyssnare (interaktivitet)
 toggleButton.addEventListener("click", toggleTheme);
-
-// Exempel på array och HOF (forEach)
-const colors = ["#121212", "#f4f4f4"]; 
-colors.forEach(color => console.log("Tema-färg:", color));
