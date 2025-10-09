@@ -33,7 +33,8 @@ Portfolion är helt responsiv och anpassad för:
 - https://youtu.be/3uKdQx-SZ5A?si=yQKn7Segt9cfiF_m - Sten Sax Påse spelet som är med i index.html
 - https://cssgradient.io/ - styling av olika element
 - https://html-css-js.com/css/generator/text-shadow/ - styla texter snyggt
-- och mååånga fler
+- ikonerna som finns laddar webbläsaren in Font Awesome version 5.15.1 direkt från CDNJS (ett nätverk som hostar statiska filer som JavaScript- och CSS-bibliotek) med länken https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css 
+- många fler
 
 ---
 
