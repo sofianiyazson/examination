@@ -15,7 +15,7 @@ Målet var att skapa en **ren och professionell design** som fungerar bra på b�
 ## 🧰 Tekniker som använts
 - HTML5  
 - CSS3 (Flexbox, Grid, Animationer)  
-- JavaScript (interaktivitet och menyhantering)  
+- JavaScript (interaktivitet)  
 - Git & GitHub  
 
 ---
