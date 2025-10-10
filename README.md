@@ -56,23 +56,21 @@ Portfolion är helt responsiv och anpassad för:
 
 ### 📄 index.html
 
-| Typ | Antal | Var | Kolumner | Layout-beskrivning |
-|------|--------|------|-----------|--------------------|
-| **Flex** | 2 | Navbar + Languages | – | Horisontell justering och centrering |
-| **Grid** | 4 | Showcase, Stats, Cloud, Footer | 2–3 | Delar upp sidan i sektioner med kolumner |
-| **Totalt grid** | 4 | – | – | Grid används för huvudlayouten |
+| Typ             | Antal | Var                            | Layout-beskrivning                       |
+| --------------- | ----- | ------------------------------ | ---------------------------------------- |
+| **Flex**        | 2     | Navbar + Languages             | Horisontell justering och centrering     |
+| **Grid**        | 4     | Showcase, Stats, Cloud, Footer | Delar upp sidan i sektioner med kolumner |
+| **Totalt grid** | 4     | –                              | Grid används för huvudlayouten           |
 
 ---
 
 ### 📘 experience.html
 
-| Typ | Antal | Var | Kolumner | Layout-beskrivning |
-|------|--------|------|-----------|--------------------|
-| **Flex** | 1 | Navbar | – | Radlayout mellan logga & navigation |
-| **Grid** | 3 | Head, Main, Footer | 2–3 | Delar sidan i sektioner med kolumner |
-| **Totalt grid** | 3 | – | – | Enkel 2–3-kolumnslayout |
-
-
+| Typ             | Antal | Var                | Layout-beskrivning                   |
+| --------------- | ----- | ------------------ | ------------------------------------ |
+| **Flex**        | 1     | Navbar             | Radlayout mellan logga & navigation  |
+| **Grid**        | 3     | Head, Main, Footer | Delar sidan i sektioner med kolumner |
+| **Totalt grid** | 3     | –                  | Enkel 2–3-kolumnslayout              |
 
 
 # ⚡ JavaScript
