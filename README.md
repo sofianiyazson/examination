@@ -24,7 +24,7 @@ Målet var att skapa en **ren och professionell design** som fungerar bra på b�
 Portfolion är helt responsiv och anpassad för:
 
 - 📱 **Mobil** (375 px (Devtools iPhone SE)
-- 💻 **Surfplatta** (768 px (DevTools iPad Mini)
+- 💻 **Surfplatta** (776 px (DevTools iPad Mini)
 - 🖥️ **Desktop** (1024 px (Devtools iPad Pro)
 
 ---
