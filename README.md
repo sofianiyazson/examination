@@ -3,6 +3,9 @@
 > En modern och responsiv portfolio byggd med HTML, CSS och JavaScript.
 
 🔗 **Live Demo:** [https://sofiassportfolio.netlify.app/](https://sofiassportfolio.netlify.app/)
+[🎬 Se presentations-videon (Google Drive)](https://drive.google.com/file/d/1KJa7YEbLH8ANfxbp8mEnBqv2TysoQV_R/view?usp=sharing)
+[🎬 Andra videon (Google Drive)](https://drive.google.com/file/d/1xNcCXzeg2LTxV9iTJgdBeEgefqTHzhV7/view?usp=sharing) kolla på den i 1.5 uppspelningshastighet för den är lite för lång och ursäkta mitt tugummituggande, jag mådde jätteilla det var därför
+
 
 ---
 
