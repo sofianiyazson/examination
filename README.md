@@ -42,7 +42,7 @@ Portfolion är helt responsiv och anpassad för:
 ## 🧰 Tekniker
 
 ### 🧱 HTML
-- Använt för att skapa en tydlig **semantisk struktur** med element som `<header>`, `<main>`, `<nav>`, `<section>` och `<footer>`.
+- Använt för att skapa en tydlig **semantisk struktur** med element som `<header>`, `<nav>`, `<section>` och `<footer>`.
 - Fokus på **tillgänglighet** och korrekt hierarki för rubriker.
 - Speficierat **alt-texter**.
 

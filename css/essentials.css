@@ -187,10 +187,6 @@ pre {
 
 /* Buttons */
 
-.btn {
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
 
 .btn-outline {
     background-color: transparent;
@@ -221,6 +217,7 @@ pre {
   width: 200px;
   justify-self: flex-end;
 }
+
 /* Navbar */
 
 .navbar {
